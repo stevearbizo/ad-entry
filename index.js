@@ -6,12 +6,10 @@ import * as payloader from './lib/payloader.js'
 import './lib/polyfills.js'
 
 // NOTE: This class expects window-scoped methods to exist:
-//	- makeAuxClickable()
-//	- prepareIndex()
-//	- prepareNetworkExit()
+
 
 // make ad clickable ASAP
-makeAuxClickable()
+window.makeAuxClickable()
 
 // prepare async + callback
 async = new Async()
@@ -21,10 +19,10 @@ async.onComplete(() => {
 })
 
 // prepare index
-prepareIndex(scope, preloader, payloader)
+window.prepareIndex(scope, preloader, payloader)
 
 // prepare network
-prepareNetworkExit()
+window.prepareNetworkExit()
 
 
 
