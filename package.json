@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "ad-load": "git://github.com:ff0000-ad-tech/ad-load.git",
-    "ad-control": "git://github.com:ff0000-ad-tech/ad-control.git"
+    "ad-control": "git://github.com:ff0000-ad-tech/ad-control.git",
+    "ad-polyfills": "git://github.com:ff0000-ad-tech/ad-polyfills.git"
   }
 }
