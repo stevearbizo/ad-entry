@@ -15,7 +15,7 @@
   "dependencies": {
     "ad-assets": "git://github.com:ff0000-ad-tech/ad-assets.git",
     "ad-load": "git://github.com:ff0000-ad-tech/ad-load.git",
-    "ad-control": "git://github.com:ff0000-ad-tech/ad-control.git#es6",
+    "ad-control": "git://github.com:ff0000-ad-tech/ad-control.git",
     "ad-polyfills": "git://github.com:ff0000-ad-tech/ad-polyfills.git"
   }
 }
