@@ -1,6 +1,6 @@
 import { Async } from 'ad-control'
 window.Async = Async // temp hack to get Async module back into the global scope
-import { customEvent } from 'ad-polyfills'
+import 'ad-polyfills'
 
 import * as scope from './lib/scope.js'
 import * as preloader from './lib/preloader.js'
