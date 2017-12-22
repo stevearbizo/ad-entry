@@ -1,4 +1,4 @@
-import { Async } from 'ad-control'
+import Async from 'ad-control/lib/Async'
 window.Async = Async // temp hack to get Async module back into the global scope
 import 'ad-polyfills'
 
