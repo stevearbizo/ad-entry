@@ -7,19 +7,21 @@ import * as preloader from './lib/preloader.js'
 import * as payloader from './lib/payloader.js'
 
 // NOTE: This class expects window-scoped methods to exist:
-
-// make ad clickable ASAP
-window.makeAuxClickable()
-
-// prepare async + callback
-async = new Async()
-async.onComplete(() => {
-	onImpression()
-	payloader.execute()
-})
-
 // prepare index
 window.prepareIndex(scope, preloader, payloader)
 
 // prepare network
 window.prepareNetworkExit()
+
+// make ad clickable ASAP
+window.makeAuxClickable()
+
+// payloader
+payloader
+	.execute()
+	.then(() => {
+		window.onImpression()
+	})
+	.catch(err => {
+		window.failAd()
+	})
