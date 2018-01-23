@@ -6,9 +6,7 @@ import * as scope from './lib/scope.js'
 import * as preloader from './lib/preloader.js'
 import * as payloader from './lib/payloader.js'
 
-
 // NOTE: This class expects window-scoped methods to exist:
-
 
 // make ad clickable ASAP
 window.makeAuxClickable()
@@ -25,6 +23,3 @@ window.prepareIndex(scope, preloader, payloader)
 
 // prepare network
 window.prepareNetworkExit()
-
-
-
