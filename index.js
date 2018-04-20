@@ -17,8 +17,11 @@ window
 			// prepare network
 			window.prepareNetworkExit()
 
-			// make ad clickable ASAP
-			window.makeAuxClickable()
+			// DEPRECATED 4/19/18 - this now happens on window.preparePreloadMisc()
+			// but must keep for older ads so the failover is clickable!
+			if (!window.isVersionOrNewer || !window.isVersionOrNewer('0.1.2')) {
+				window.makeAuxClickable()
+			}
 		})
 	})
 
