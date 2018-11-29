@@ -15,7 +15,7 @@ polite
 	.prepare(window.adParams.politeLoadAfter)
 
 	// prepare vendor onload (Network.js)
-	.then(() => window.prepareIndex()
+	.then(() => window.prepareIndex())
 
 	// prepare scope
 	.then(() => scope.prepare())
