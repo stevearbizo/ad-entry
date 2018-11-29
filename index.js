@@ -5,8 +5,8 @@ import * as preloader from './lib/preloader.js'
 import * as payloader from './lib/payloader.js'
 
 /*
- * 	NOTE: 
- *	
+ * 	NOTE:
+ *
  *	This class expects window-scoped methods to exist
  *
  */
@@ -38,7 +38,7 @@ polite
 
 	// launch polite
 	.then(fbaContent => {
-		preloader.isComplete().then(() => window.onImpression(fbaContent))
+		preloader.isComplete.then(() => window.onImpression(fbaContent))
 	})
 
 	.catch(err => {
