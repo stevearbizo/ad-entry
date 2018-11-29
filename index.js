@@ -37,7 +37,9 @@ polite
 	.then(() => payloader.execute())
 
 	// launch polite
-	.then(fbaContent => window.onImpression(fbaContent))
+	.then(fbaContent => {
+		preloader.isComplete().then(() => window.onImpression(fbaContent))
+	})
 
 	.catch(err => {
 		console.error(err)
